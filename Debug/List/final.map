@@ -1,0 +1,36 @@
+RAM Allocation [bytes]
+Variable                                                                          Address   Size
+------------------------------------------------------------------------------------------------
+simple_alert_delay                                                                0x0160       4
+causion_alert_delay                                                               0x0164       4
+fire_detected_delay                                                               0x0168       4
+
+EEPROM Allocation [bytes]
+Variable                                                                          Address   Size
+------------------------------------------------------------------------------------------------
+
+Register Allocation
+Variable                                                                          Register  Size
+------------------------------------------------------------------------------------------------
+simple_temp_milestone                                                             R4,R5        2
+causion_temp_milestone                                                            R6,R7        2
+fire_temp_milstone                                                                R8,R9        2
+isWaterOpen                                                                       R10,R11      2
+onFire                                                                            R12,R13      2
+
+FLASH Allocation [words]
+Function                                                                          Address   Size
+------------------------------------------------------------------------------------------------
+read_adc                                                                          0x0006C     14
+alert                                                                             0x0007A     10
+causion                                                                           0x00084     10
+alarm_fire                                                                        0x0008E     17
+off                                                                               0x0009F      3
+start                                                                             0x000A2     53
+isFire                                                                            0x000D7      6
+isCaution                                                                         0x000DD     13
+isSimple                                                                          0x000EA     22
+openWaterValve                                                                    0x00100      9
+closeWaterValve                                                                   0x00109     10
+readTemprature                                                                    0x00113     22
+main                                                                              0x00129     48
